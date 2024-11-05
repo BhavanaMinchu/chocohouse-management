@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% block content %}
+<h2>Ingredient Inventory</h2>
+<form method="post">
+  <input type="text" name="ingredient" placeholder="Ingredient Name" required />
+  <input type="number" name="quantity" placeholder="Quantity" required />
+  <button type="submit">Add Ingredient</button>
+</form>
+
+<ul>
+  {% for ingredient in ingredients %}
+  <li>
+    <strong>{{ ingredient[1] }}</strong> - {{ ingredient[2] }} kgs
+    <a href="{{ url_for('edit_inventory', ingredient_id=ingredient[0]) }}"
+      >Edit</a
+    >
+    |
+    <a
+      href="{{ url_for('delete_inventory', ingredient_id=ingredient[0]) }}"
+      onclick="return confirm('Are you sure you want to delete this ingredient?');"
+      >Delete</a
+    >
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Edit Flavor</h2>
+    <form method="post">
+        <input type="text" name="name" value="{{ flavor[1] }}" required>
+        <input type="text" name="description" value="{{ flavor[2] }}">
+        <select name="stock">
+            <option value="Available" {% if flavor[3] == 'Available' %}selected{% endif %}>Available</option>
+            <option value="Sold Out" {% if flavor[3] == 'Sold Out' %}selected{% endif %}>Sold Out</option>
+          </select>
+        <select name="season">
+            <option value="Winter" {% if flavor[4] == 'Winter' %}selected{% endif %}>Winter</option>
+            <option value="Spring" {% if flavor[4] == 'Spring' %}selected{% endif %}>Spring</option>
+            <option value="Summer" {% if flavor[4] == 'Summer' %}selected{% endif %}>Summer</option>
+            <option value="Fall" {% if flavor[4] == 'Fall' %}selected{% endif %}>Fall</option>
+        </select>
+        <button type="submit">Update Flavor</button>
+    </form>
+{% endblock %}

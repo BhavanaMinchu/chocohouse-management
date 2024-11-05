@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chocolate House</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <center><h1>Welcome to the Chocolate House</h1></center>
+    <nav>
+      <a href="{{ url_for('home') }}">Home</a> |
+      <a href="{{ url_for('flavors') }}">Flavors</a> |
+      <a href="{{ url_for('inventory') }}">Inventory</a> |
+      <a href="{{ url_for('suggestions') }}">Customer Suggestions</a>
+    </nav>
+    <div class="content">{% block content %}{% endblock %}</div>
+  </body>
+</html>

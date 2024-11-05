@@ -1,0 +1,103 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  color: #444;
+  font-weight: 300;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.content {
+  max-width: 700px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar styling */
+nav {
+  background-color: #444;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #f4f4f9;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  background-color: #666;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Form styling */
+form {
+  margin: 20px 0;
+}
+
+input,
+textarea,
+select,
+button {
+  width: 650px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  width: 675px;
+  background-color: #1d5929;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #174821;
+}
+select {
+  width: 675px;
+}
+/* List styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 676px;
+}
+
+li {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+li a {
+  color: #1d5929;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li a:hover {
+  text-decoration: underline;
+}

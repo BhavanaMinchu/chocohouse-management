@@ -1,0 +1,8 @@
+{% extends 'base.html' %} {% block content %}
+<h2>Edit Inventory</h2>
+<form method="post">
+  <input type="text" name="ingredient" value="{{ ingredient[1] }}" required />
+  <input type="number" name="quantity" value="{{ ingredient[2] }}" required />
+  <button type="submit">Update Ingredient</button>
+</form>
+{% endblock %}

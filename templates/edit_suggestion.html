@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+<h2>Edit Suggestion</h2>
+<form method="post">
+  <input
+    type="text"
+    name="customer_name"
+    value="{{ suggestion[1] }}"
+    required
+  />
+  <textarea name="suggestion">{{ suggestion[2] }}</textarea>
+  <input type="text" name="allergy_concerns" value="{{ suggestion[3] }}" />
+  <button type="submit">Update Suggestion</button>
+</form>
+{% endblock %}
