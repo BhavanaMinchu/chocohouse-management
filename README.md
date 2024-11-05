@@ -119,7 +119,7 @@ To validate that each feature works as expected:
 
 ### Dockerfile
 
-Use the `Dockerfile` to containerize the application:
+Use the `Dockerfile` provided to containerize the application:
 
 Build the Docker image:
 
